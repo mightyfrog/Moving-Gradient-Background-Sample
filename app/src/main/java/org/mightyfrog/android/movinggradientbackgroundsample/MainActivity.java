@@ -12,15 +12,15 @@ import android.widget.FrameLayout;
  */
 public class MainActivity extends AppCompatActivity {
 
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-    FrameLayout layout = (FrameLayout) findViewById(R.id.content_frame);
-    AnimationDrawable animationDrawable = (AnimationDrawable) layout.getBackground();
-    animationDrawable.setEnterFadeDuration(2500);
-    animationDrawable.setExitFadeDuration(5000);
-    animationDrawable.start();
-  }
+        FrameLayout layout = findViewById(R.id.content_frame);
+        AnimationDrawable animationDrawable = (AnimationDrawable) layout.getBackground();
+        animationDrawable.setEnterFadeDuration(2500);
+        animationDrawable.setExitFadeDuration(5000);
+        animationDrawable.start();
+    }
 }
