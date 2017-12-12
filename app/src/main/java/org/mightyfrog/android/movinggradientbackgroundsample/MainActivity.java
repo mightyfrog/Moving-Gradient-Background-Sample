@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         FrameLayout layout = findViewById(R.id.content_frame);
         AnimationDrawable animationDrawable = (AnimationDrawable) layout.getBackground();
         animationDrawable.setEnterFadeDuration(2500);
-        animationDrawable.setExitFadeDuration(5000);
+        animationDrawable.setExitFadeDuration(2500);
         animationDrawable.start();
     }
 }
