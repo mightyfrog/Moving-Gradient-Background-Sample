@@ -17,9 +17,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val layout = findViewById<FrameLayout>(R.id.content_frame)
-        val animationDrawable = layout.background as AnimationDrawable
-        animationDrawable.setEnterFadeDuration(2500)
-        animationDrawable.setExitFadeDuration(2500)
-        animationDrawable.start()
+        (layout.background as AnimationDrawable).apply {
+            setEnterFadeDuration(2500)
+            setExitFadeDuration(2500)
+            start()
+        }
     }
 }
